@@ -1,0 +1,4 @@
+run:
+	g++ PaqueteDatagrama.cpp -o PaqueteDatagrama.o
+	g++ unitTest.cpp PaqueteDatagrama.o  -o test	
+	

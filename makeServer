@@ -1,0 +1,20 @@
+all:test
+
+test: PaqueteDatagrama.o Respuesta.o SocketDatagrama.o serverTest.o
+	g++ Respuesta.o serverTest.o SocketDatagrama.o PaqueteDatagrama.o -o server
+
+serverTest.o:serverTest.cpp
+	g++ serverTest.cpp -c
+
+PaqueteDatagrama.o:PaqueteDatagrama.cpp
+	g++ PaqueteDatagrama.cpp -c	
+
+Respuesta.o:Respuesta.cpp
+	g++ Respuesta.cpp -c	
+
+SocketDatagrama.o:SocketDatagrama.cpp
+	g++ SocketDatagrama.cpp -c
+
+
+
+	
